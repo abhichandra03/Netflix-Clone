@@ -49,7 +49,7 @@ const Row = ({ title, fetchURL, rowID }) => {
               />
               <div className="absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100">
                 <p className="white-space-normal text-xs md:text-sm font-bold flex justify-center h-full items-center">
-                  {item?.original_title}
+                  {item?.original_title || item?.name}
                 </p>
                 <p>
                   {like ? (
